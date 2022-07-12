@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.servlets
+package org.rjs.aem.groovy.console.servlets
 
 import org.apache.commons.lang3.StringUtils
 import org.apache.sling.api.SlingHttpServletRequest

@@ -1,6 +1,6 @@
-package org.cid15.aem.groovy.console.response
+package org.rjs.aem.groovy.console.response
 
-import org.cid15.aem.groovy.console.api.JobProperties
+import org.rjs.aem.groovy.console.api.JobProperties
 
 /**
  * Response for script executions.

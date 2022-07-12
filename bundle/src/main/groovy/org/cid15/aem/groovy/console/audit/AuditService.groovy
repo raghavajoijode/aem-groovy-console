@@ -1,6 +1,6 @@
-package org.cid15.aem.groovy.console.audit
+package org.rjs.aem.groovy.console.audit
 
-import org.cid15.aem.groovy.console.response.RunScriptResponse
+import org.rjs.aem.groovy.console.response.RunScriptResponse
 
 interface AuditService {
 

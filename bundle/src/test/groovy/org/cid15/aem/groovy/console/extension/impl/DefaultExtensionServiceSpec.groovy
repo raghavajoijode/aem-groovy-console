@@ -1,15 +1,15 @@
-package org.cid15.aem.groovy.console.extension.impl
+package org.rjs.aem.groovy.console.extension.impl
 
 import com.google.common.io.ByteStreams
-import org.cid15.aem.groovy.console.api.impl.RequestScriptContext
+import org.rjs.aem.groovy.console.api.impl.RequestScriptContext
 import com.icfolson.aem.prosper.specs.ProsperSpec
-import org.cid15.aem.groovy.console.api.BindingExtensionProvider
-import org.cid15.aem.groovy.console.api.BindingVariable
-import org.cid15.aem.groovy.console.api.ScriptMetaClassExtensionProvider
-import org.cid15.aem.groovy.console.api.StarImport
-import org.cid15.aem.groovy.console.api.StarImportExtensionProvider
-import org.cid15.aem.groovy.console.api.context.ScriptContext
-import org.cid15.aem.groovy.console.extension.ExtensionService
+import org.rjs.aem.groovy.console.api.BindingExtensionProvider
+import org.rjs.aem.groovy.console.api.BindingVariable
+import org.rjs.aem.groovy.console.api.ScriptMetaClassExtensionProvider
+import org.rjs.aem.groovy.console.api.StarImport
+import org.rjs.aem.groovy.console.api.StarImportExtensionProvider
+import org.rjs.aem.groovy.console.api.context.ScriptContext
+import org.rjs.aem.groovy.console.extension.ExtensionService
 import org.codehaus.groovy.control.CompilerConfiguration
 import org.codehaus.groovy.control.MultipleCompilationErrorsException
 import org.codehaus.groovy.control.customizers.CompilationCustomizer

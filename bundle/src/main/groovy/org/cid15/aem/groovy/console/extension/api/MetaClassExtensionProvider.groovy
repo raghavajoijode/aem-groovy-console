@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.extension.api
+package org.rjs.aem.groovy.console.extension.api
 
 /**
  * Services may implement this interface to register additional Groovy metaclasses in the OSGi container.

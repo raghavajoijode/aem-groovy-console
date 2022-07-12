@@ -1,29 +1,29 @@
-package org.cid15.aem.groovy.console.response.impl
+package org.rjs.aem.groovy.console.response.impl
 
 import com.day.cq.commons.jcr.JcrConstants
 import com.day.cq.commons.jcr.JcrUtil
 import com.day.text.Text
 import com.google.common.net.MediaType
-import org.cid15.aem.groovy.console.api.JobProperties
-import org.cid15.aem.groovy.console.api.context.JobScriptContext
-import org.cid15.aem.groovy.console.api.context.ScriptContext
-import org.cid15.aem.groovy.console.response.RunScriptResponse
-import org.cid15.aem.groovy.console.table.Table
+import org.rjs.aem.groovy.console.api.JobProperties
+import org.rjs.aem.groovy.console.api.context.JobScriptContext
+import org.rjs.aem.groovy.console.api.context.ScriptContext
+import org.rjs.aem.groovy.console.response.RunScriptResponse
+import org.rjs.aem.groovy.console.table.Table
 import groovy.json.JsonBuilder
 import groovy.transform.TupleConstructor
 import org.apache.commons.lang3.exception.ExceptionUtils
 import org.apache.sling.api.resource.Resource
 import org.apache.sling.api.resource.ResourceUtil
 
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.DATA
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.DATE_FORMAT_FILE_NAME
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.EXCEPTION_STACK_TRACE
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.JOB_ID
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.MEDIA_TYPE_EXTENSIONS
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.OUTPUT
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.RESULT
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.RUNNING_TIME
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.DATA
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.DATE_FORMAT_FILE_NAME
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.EXCEPTION_STACK_TRACE
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.JOB_ID
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.MEDIA_TYPE_EXTENSIONS
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.OUTPUT
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.RESULT
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.RUNNING_TIME
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
 
 @TupleConstructor
 class DefaultRunScriptResponse implements RunScriptResponse {

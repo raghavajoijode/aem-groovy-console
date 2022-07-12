@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.api
+package org.rjs.aem.groovy.console.api
 
 /**
  * Services may implement this interface to supply additional star imports to the compiler configuration for Groovy

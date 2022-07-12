@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.api
+package org.rjs.aem.groovy.console.api
 
 import groovy.transform.ToString
 

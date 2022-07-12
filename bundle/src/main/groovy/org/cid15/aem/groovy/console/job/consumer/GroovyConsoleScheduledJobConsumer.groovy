@@ -1,13 +1,13 @@
-package org.cid15.aem.groovy.console.job.consumer
+package org.rjs.aem.groovy.console.job.consumer
 
 import com.google.common.base.Charsets
-import org.cid15.aem.groovy.console.GroovyConsoleService
-import org.cid15.aem.groovy.console.api.impl.ScheduledJobScriptContext
+import org.rjs.aem.groovy.console.GroovyConsoleService
+import org.rjs.aem.groovy.console.api.impl.ScheduledJobScriptContext
 import groovy.util.logging.Slf4j
 import org.apache.sling.api.resource.ResourceResolverFactory
 import org.apache.sling.event.jobs.Job
 import org.apache.sling.event.jobs.consumer.JobConsumer
-import org.cid15.aem.groovy.console.api.JobProperties
+import org.rjs.aem.groovy.console.api.JobProperties
 import org.osgi.service.component.annotations.Component
 import org.osgi.service.component.annotations.Reference
 

@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.table
+package org.rjs.aem.groovy.console.table
 
 class Table {
 

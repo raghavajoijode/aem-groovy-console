@@ -1,11 +1,11 @@
-package org.cid15.aem.groovy.console.servlets
+package org.rjs.aem.groovy.console.servlets
 
 import com.google.common.net.HttpHeaders
-import org.cid15.aem.groovy.console.audit.AuditService
+import org.rjs.aem.groovy.console.audit.AuditService
 import org.apache.sling.api.SlingHttpServletRequest
 import org.apache.sling.api.SlingHttpServletResponse
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet
-import org.cid15.aem.groovy.console.constants.GroovyConsoleConstants
+import org.rjs.aem.groovy.console.constants.GroovyConsoleConstants
 import org.osgi.service.component.annotations.Component
 import org.osgi.service.component.annotations.Reference
 

@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.extension.builders
+package org.rjs.aem.groovy.console.extension.builders
 
 import com.day.cq.commons.jcr.JcrConstants
 import com.day.cq.wcm.api.NameConstants

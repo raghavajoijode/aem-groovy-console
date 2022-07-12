@@ -1,18 +1,18 @@
-package org.cid15.aem.groovy.console.extension.impl
+package org.rjs.aem.groovy.console.extension.impl
 
 import com.day.cq.search.QueryBuilder
 import com.day.cq.wcm.api.PageManager
-import org.cid15.aem.groovy.console.api.BindingExtensionProvider
-import org.cid15.aem.groovy.console.api.BindingVariable
-import org.cid15.aem.groovy.console.api.context.ScriptContext
-import org.cid15.aem.groovy.console.api.context.ServletScriptContext
+import org.rjs.aem.groovy.console.api.BindingExtensionProvider
+import org.rjs.aem.groovy.console.api.BindingVariable
+import org.rjs.aem.groovy.console.api.context.ScriptContext
+import org.rjs.aem.groovy.console.api.context.ServletScriptContext
 import groovy.json.JsonException
 import groovy.json.JsonSlurper
 import org.apache.sling.api.SlingHttpServletRequest
 import org.apache.sling.api.SlingHttpServletResponse
 import org.apache.sling.api.resource.ResourceResolver
-import org.cid15.aem.groovy.console.extension.builders.PageBuilder
-import org.cid15.aem.groovy.console.extension.builders.NodeBuilder
+import org.rjs.aem.groovy.console.extension.builders.PageBuilder
+import org.rjs.aem.groovy.console.extension.builders.NodeBuilder
 import org.osgi.framework.BundleContext
 import org.osgi.service.component.annotations.Activate
 import org.osgi.service.component.annotations.Component

@@ -1,27 +1,27 @@
-package org.cid15.aem.groovy.console.servlets
+package org.rjs.aem.groovy.console.servlets
 
 import com.google.common.collect.ImmutableMap
-import org.cid15.aem.groovy.console.GroovyConsoleService
-import org.cid15.aem.groovy.console.api.JobProperties
-import org.cid15.aem.groovy.console.audit.AuditRecord
-import org.cid15.aem.groovy.console.audit.AuditService
-import org.cid15.aem.groovy.console.configuration.ConfigurationService
-import org.cid15.aem.groovy.console.utils.GroovyScriptUtils
+import org.rjs.aem.groovy.console.GroovyConsoleService
+import org.rjs.aem.groovy.console.api.JobProperties
+import org.rjs.aem.groovy.console.audit.AuditRecord
+import org.rjs.aem.groovy.console.audit.AuditService
+import org.rjs.aem.groovy.console.configuration.ConfigurationService
+import org.rjs.aem.groovy.console.utils.GroovyScriptUtils
 import groovy.util.logging.Slf4j
 import org.apache.sling.api.SlingHttpServletRequest
 import org.apache.sling.api.SlingHttpServletResponse
 import org.apache.sling.event.jobs.JobManager
 import org.apache.sling.event.jobs.ScheduledJobInfo
-import org.cid15.aem.groovy.console.constants.GroovyConsoleConstants
+import org.rjs.aem.groovy.console.constants.GroovyConsoleConstants
 import org.osgi.service.component.annotations.Component
 import org.osgi.service.component.annotations.Reference
 
 import javax.servlet.Servlet
 import javax.servlet.ServletException
 
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.DATE_CREATED
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.SCHEDULED_JOB_ID
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.DATE_CREATED
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.SCHEDULED_JOB_ID
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
 import static javax.servlet.http.HttpServletResponse.SC_BAD_REQUEST
 import static javax.servlet.http.HttpServletResponse.SC_FORBIDDEN
 

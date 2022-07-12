@@ -1,7 +1,7 @@
-package org.cid15.aem.groovy.console.servlets
+package org.rjs.aem.groovy.console.servlets
 
-import org.cid15.aem.groovy.console.GroovyConsoleService
-import org.cid15.aem.groovy.console.api.impl.RequestScriptData
+import org.rjs.aem.groovy.console.GroovyConsoleService
+import org.rjs.aem.groovy.console.api.impl.RequestScriptData
 import org.apache.sling.api.SlingHttpServletRequest
 import org.apache.sling.api.SlingHttpServletResponse
 import org.osgi.service.component.annotations.Component

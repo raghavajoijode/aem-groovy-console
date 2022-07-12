@@ -1,6 +1,6 @@
-package org.cid15.aem.groovy.console.api
+package org.rjs.aem.groovy.console.api
 
-import org.cid15.aem.groovy.console.api.context.ScriptContext
+import org.rjs.aem.groovy.console.api.context.ScriptContext
 
 /**
  * Services may implement this interface to supply additional binding values for Groovy script executions.

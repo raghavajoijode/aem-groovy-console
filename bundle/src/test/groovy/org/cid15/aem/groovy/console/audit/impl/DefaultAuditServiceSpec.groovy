@@ -1,12 +1,12 @@
-package org.cid15.aem.groovy.console.audit.impl
+package org.rjs.aem.groovy.console.audit.impl
 
-import org.cid15.aem.groovy.console.api.impl.RequestScriptContext
-import org.cid15.aem.groovy.console.configuration.impl.DefaultConfigurationService
+import org.rjs.aem.groovy.console.api.impl.RequestScriptContext
+import org.rjs.aem.groovy.console.configuration.impl.DefaultConfigurationService
 import com.icfolson.aem.prosper.specs.ProsperSpec
 import org.apache.commons.lang3.exception.ExceptionUtils
 import org.apache.sling.jcr.resource.JcrResourceConstants
-import org.cid15.aem.groovy.console.audit.AuditRecord
-import org.cid15.aem.groovy.console.response.impl.DefaultRunScriptResponse
+import org.rjs.aem.groovy.console.audit.AuditRecord
+import org.rjs.aem.groovy.console.response.impl.DefaultRunScriptResponse
 import spock.lang.Shared
 import spock.lang.Unroll
 

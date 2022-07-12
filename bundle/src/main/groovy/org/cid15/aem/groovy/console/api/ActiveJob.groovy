@@ -1,10 +1,10 @@
-package org.cid15.aem.groovy.console.api
+package org.rjs.aem.groovy.console.api
 
-import org.cid15.aem.groovy.console.utils.GroovyScriptUtils
+import org.rjs.aem.groovy.console.utils.GroovyScriptUtils
 import groovy.transform.Memoized
 import groovy.transform.TupleConstructor
 import org.apache.sling.event.jobs.Job
-import org.cid15.aem.groovy.console.constants.GroovyConsoleConstants
+import org.rjs.aem.groovy.console.constants.GroovyConsoleConstants
 
 @TupleConstructor
 class ActiveJob {

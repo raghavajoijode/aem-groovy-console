@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.constants
+package org.rjs.aem.groovy.console.constants
 
 import com.google.common.base.Charsets
 import com.google.common.net.MediaType

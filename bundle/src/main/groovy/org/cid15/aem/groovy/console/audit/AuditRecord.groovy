@@ -1,10 +1,10 @@
-package org.cid15.aem.groovy.console.audit
+package org.rjs.aem.groovy.console.audit
 
 import com.day.text.Text
 import groovy.transform.ToString
 import org.apache.sling.api.resource.Resource
-import org.cid15.aem.groovy.console.response.RunScriptResponse
-import org.cid15.aem.groovy.console.response.impl.DefaultRunScriptResponse
+import org.rjs.aem.groovy.console.response.RunScriptResponse
+import org.rjs.aem.groovy.console.response.impl.DefaultRunScriptResponse
 
 @ToString(includePackage = false, includes = ["path"])
 class AuditRecord implements RunScriptResponse {

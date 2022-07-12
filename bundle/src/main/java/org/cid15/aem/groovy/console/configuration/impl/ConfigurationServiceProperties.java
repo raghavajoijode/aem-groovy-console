@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.configuration.impl;
+package org.rjs.aem.groovy.console.configuration.impl;
 
 import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;

@@ -1,15 +1,15 @@
-package org.cid15.aem.groovy.console.extension.impl
+package org.rjs.aem.groovy.console.extension.impl
 
-import org.cid15.aem.groovy.console.api.BindingExtensionProvider
-import org.cid15.aem.groovy.console.api.BindingVariable
-import org.cid15.aem.groovy.console.api.CompilationCustomizerExtensionProvider
-import org.cid15.aem.groovy.console.api.ScriptMetaClassExtensionProvider
-import org.cid15.aem.groovy.console.api.StarImport
-import org.cid15.aem.groovy.console.api.StarImportExtensionProvider
-import org.cid15.aem.groovy.console.api.context.ScriptContext
+import org.rjs.aem.groovy.console.api.BindingExtensionProvider
+import org.rjs.aem.groovy.console.api.BindingVariable
+import org.rjs.aem.groovy.console.api.CompilationCustomizerExtensionProvider
+import org.rjs.aem.groovy.console.api.ScriptMetaClassExtensionProvider
+import org.rjs.aem.groovy.console.api.StarImport
+import org.rjs.aem.groovy.console.api.StarImportExtensionProvider
+import org.rjs.aem.groovy.console.api.context.ScriptContext
 import groovy.transform.Synchronized
 import groovy.util.logging.Slf4j
-import org.cid15.aem.groovy.console.extension.ExtensionService
+import org.rjs.aem.groovy.console.extension.ExtensionService
 import org.codehaus.groovy.control.customizers.CompilationCustomizer
 import org.codehaus.groovy.control.customizers.ImportCustomizer
 import org.osgi.service.component.annotations.Component

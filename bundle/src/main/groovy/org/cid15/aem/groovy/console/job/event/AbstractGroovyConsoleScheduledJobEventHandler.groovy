@@ -1,9 +1,9 @@
-package org.cid15.aem.groovy.console.job.event
+package org.rjs.aem.groovy.console.job.event
 
-import org.cid15.aem.groovy.console.audit.AuditService
+import org.rjs.aem.groovy.console.audit.AuditService
 import groovy.util.logging.Slf4j
 import org.apache.sling.event.jobs.NotificationConstants
-import org.cid15.aem.groovy.console.response.RunScriptResponse
+import org.rjs.aem.groovy.console.response.RunScriptResponse
 import org.osgi.service.event.Event
 import org.osgi.service.event.EventHandler
 

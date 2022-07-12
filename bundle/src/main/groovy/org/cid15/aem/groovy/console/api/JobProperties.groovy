@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.api
+package org.rjs.aem.groovy.console.api
 
 import com.google.common.collect.ImmutableSet
 import groovy.transform.TupleConstructor
@@ -6,16 +6,16 @@ import org.apache.sling.api.SlingHttpServletRequest
 import org.apache.sling.api.resource.ValueMap
 import org.apache.sling.event.jobs.Job
 
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.CRON_EXPRESSION
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.DATA
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.DATE_CREATED
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.EMAIL_TO
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.JOB_DESCRIPTION
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.JOB_PROPERTIES
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.JOB_TITLE
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.MEDIA_TYPE
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.SCHEDULED_JOB_ID
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.CRON_EXPRESSION
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.DATA
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.DATE_CREATED
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.EMAIL_TO
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.JOB_DESCRIPTION
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.JOB_PROPERTIES
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.JOB_TITLE
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.MEDIA_TYPE
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.SCHEDULED_JOB_ID
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
 
 @TupleConstructor
 class JobProperties {

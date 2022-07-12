@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.extension.impl
+package org.rjs.aem.groovy.console.extension.impl
 
 import com.day.cq.replication.ReplicationActionType
 import com.day.cq.replication.ReplicationOptions
@@ -6,9 +6,9 @@ import com.day.cq.replication.Replicator
 import com.day.cq.search.PredicateGroup
 import com.day.cq.search.QueryBuilder
 import com.day.cq.wcm.api.PageManager
-import org.cid15.aem.groovy.console.api.context.ScriptContext
-import org.cid15.aem.groovy.console.api.ScriptMetaClassExtensionProvider
-import org.cid15.aem.groovy.console.table.Table
+import org.rjs.aem.groovy.console.api.context.ScriptContext
+import org.rjs.aem.groovy.console.api.ScriptMetaClassExtensionProvider
+import org.rjs.aem.groovy.console.table.Table
 import org.apache.sling.models.factory.ModelFactory
 import org.osgi.framework.BundleContext
 import org.osgi.service.component.annotations.Activate

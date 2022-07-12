@@ -1,6 +1,6 @@
-package org.cid15.aem.groovy.console.components
+package org.rjs.aem.groovy.console.components
 
-import org.cid15.aem.groovy.console.audit.AuditService
+import org.rjs.aem.groovy.console.audit.AuditService
 import org.apache.sling.api.SlingHttpServletRequest
 import org.apache.sling.models.annotations.Model
 import org.apache.sling.models.annotations.injectorspecific.OSGiService

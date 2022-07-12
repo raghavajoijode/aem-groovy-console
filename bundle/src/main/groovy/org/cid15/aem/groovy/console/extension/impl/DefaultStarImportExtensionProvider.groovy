@@ -1,8 +1,8 @@
-package org.cid15.aem.groovy.console.extension.impl
+package org.rjs.aem.groovy.console.extension.impl
 
 import com.google.common.collect.ImmutableSet
-import org.cid15.aem.groovy.console.api.StarImport
-import org.cid15.aem.groovy.console.api.StarImportExtensionProvider
+import org.rjs.aem.groovy.console.api.StarImport
+import org.rjs.aem.groovy.console.api.StarImportExtensionProvider
 import org.osgi.service.component.annotations.Component
 
 @Component(service = StarImportExtensionProvider, immediate = true)

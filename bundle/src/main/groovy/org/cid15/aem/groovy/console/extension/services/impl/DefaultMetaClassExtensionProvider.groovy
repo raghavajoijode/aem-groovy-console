@@ -1,9 +1,9 @@
-package org.cid15.aem.groovy.console.extension.services.impl
+package org.rjs.aem.groovy.console.extension.services.impl
 
 import com.day.cq.wcm.api.Page
 import com.google.common.base.Optional
 import groovy.util.logging.Slf4j
-import org.cid15.aem.groovy.console.extension.api.MetaClassExtensionProvider
+import org.rjs.aem.groovy.console.extension.api.MetaClassExtensionProvider
 import org.osgi.service.component.annotations.Component
 
 import javax.jcr.Binary

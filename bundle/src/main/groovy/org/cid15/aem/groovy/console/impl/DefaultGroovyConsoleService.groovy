@@ -1,27 +1,27 @@
-package org.cid15.aem.groovy.console.impl
+package org.rjs.aem.groovy.console.impl
 
 import com.day.cq.commons.jcr.JcrConstants
 import com.day.cq.commons.jcr.JcrUtil
 import com.google.common.net.MediaType
-import org.cid15.aem.groovy.console.GroovyConsoleService
-import org.cid15.aem.groovy.console.audit.AuditService
-import org.cid15.aem.groovy.console.configuration.ConfigurationService
-import org.cid15.aem.groovy.console.notification.NotificationService
+import org.rjs.aem.groovy.console.GroovyConsoleService
+import org.rjs.aem.groovy.console.audit.AuditService
+import org.rjs.aem.groovy.console.configuration.ConfigurationService
+import org.rjs.aem.groovy.console.notification.NotificationService
 import groovy.transform.Synchronized
 import groovy.transform.TimedInterrupt
 import groovy.util.logging.Slf4j
 import org.apache.jackrabbit.util.Text
 import org.apache.sling.event.jobs.JobManager
-import org.cid15.aem.groovy.console.api.ActiveJob
-import org.cid15.aem.groovy.console.api.JobProperties
-import org.cid15.aem.groovy.console.api.context.ScriptContext
-import org.cid15.aem.groovy.console.api.context.ScriptData
-import org.cid15.aem.groovy.console.constants.GroovyConsoleConstants
-import org.cid15.aem.groovy.console.extension.ExtensionService
-import org.cid15.aem.groovy.console.response.RunScriptResponse
-import org.cid15.aem.groovy.console.response.SaveScriptResponse
-import org.cid15.aem.groovy.console.response.impl.DefaultRunScriptResponse
-import org.cid15.aem.groovy.console.response.impl.DefaultSaveScriptResponse
+import org.rjs.aem.groovy.console.api.ActiveJob
+import org.rjs.aem.groovy.console.api.JobProperties
+import org.rjs.aem.groovy.console.api.context.ScriptContext
+import org.rjs.aem.groovy.console.api.context.ScriptData
+import org.rjs.aem.groovy.console.constants.GroovyConsoleConstants
+import org.rjs.aem.groovy.console.extension.ExtensionService
+import org.rjs.aem.groovy.console.response.RunScriptResponse
+import org.rjs.aem.groovy.console.response.SaveScriptResponse
+import org.rjs.aem.groovy.console.response.impl.DefaultRunScriptResponse
+import org.rjs.aem.groovy.console.response.impl.DefaultSaveScriptResponse
 import org.codehaus.groovy.control.CompilerConfiguration
 import org.codehaus.groovy.control.MultipleCompilationErrorsException
 import org.codehaus.groovy.control.customizers.ASTTransformationCustomizer
@@ -36,10 +36,10 @@ import javax.jcr.Session
 import java.text.SimpleDateFormat
 import java.util.concurrent.CopyOnWriteArrayList
 
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.CHARSET
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.FORMAT_RUNNING_TIME
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.PATH_SCRIPTS_FOLDER
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.TIME_ZONE_RUNNING_TIME
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.CHARSET
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.FORMAT_RUNNING_TIME
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.PATH_SCRIPTS_FOLDER
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.TIME_ZONE_RUNNING_TIME
 
 @Component(service = GroovyConsoleService, immediate = true)
 @Slf4j("LOG")

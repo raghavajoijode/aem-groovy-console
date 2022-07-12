@@ -1,11 +1,11 @@
-package org.cid15.aem.groovy.console.servlets
+package org.rjs.aem.groovy.console.servlets
 
 import com.day.cq.commons.jcr.JcrConstants
 import com.google.common.base.Charsets
-import org.cid15.aem.groovy.console.GroovyConsoleService
-import org.cid15.aem.groovy.console.api.context.ScriptContext
-import org.cid15.aem.groovy.console.api.impl.RequestScriptContext
-import org.cid15.aem.groovy.console.configuration.ConfigurationService
+import org.rjs.aem.groovy.console.GroovyConsoleService
+import org.rjs.aem.groovy.console.api.context.ScriptContext
+import org.rjs.aem.groovy.console.api.impl.RequestScriptContext
+import org.rjs.aem.groovy.console.configuration.ConfigurationService
 import groovy.util.logging.Slf4j
 import org.apache.sling.api.SlingHttpServletRequest
 import org.apache.sling.api.SlingHttpServletResponse
@@ -17,9 +17,9 @@ import javax.servlet.Servlet
 import javax.servlet.ServletException
 
 import static com.google.common.base.Preconditions.checkNotNull
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT_PATH
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT_PATHS
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT_PATH
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT_PATHS
 import static javax.servlet.http.HttpServletResponse.SC_FORBIDDEN
 
 @Component(service = Servlet, immediate = true, property = [

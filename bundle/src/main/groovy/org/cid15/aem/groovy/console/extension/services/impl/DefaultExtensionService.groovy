@@ -1,9 +1,9 @@
-package org.cid15.aem.groovy.console.extension.services.impl
+package org.rjs.aem.groovy.console.extension.services.impl
 
 import groovy.transform.Synchronized
 import groovy.util.logging.Slf4j
-import org.cid15.aem.groovy.console.extension.api.MetaClassExtensionProvider
-import org.cid15.aem.groovy.console.extension.services.ExtensionService
+import org.rjs.aem.groovy.console.extension.api.MetaClassExtensionProvider
+import org.rjs.aem.groovy.console.extension.services.ExtensionService
 import org.codehaus.groovy.runtime.InvokerHelper
 import org.osgi.service.component.annotations.Component
 import org.osgi.service.component.annotations.Reference

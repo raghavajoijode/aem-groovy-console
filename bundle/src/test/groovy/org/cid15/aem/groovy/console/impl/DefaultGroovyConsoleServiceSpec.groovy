@@ -1,24 +1,24 @@
-package org.cid15.aem.groovy.console.impl
+package org.rjs.aem.groovy.console.impl
 
 import com.day.cq.commons.jcr.JcrConstants
 import com.day.cq.replication.Replicator
 import com.day.cq.search.QueryBuilder
 import com.google.common.base.Charsets
-import org.cid15.aem.groovy.console.GroovyConsoleService
-import org.cid15.aem.groovy.console.api.impl.RequestScriptContext
-import org.cid15.aem.groovy.console.api.impl.RequestScriptData
-import org.cid15.aem.groovy.console.configuration.ConfigurationService
+import org.rjs.aem.groovy.console.GroovyConsoleService
+import org.rjs.aem.groovy.console.api.impl.RequestScriptContext
+import org.rjs.aem.groovy.console.api.impl.RequestScriptData
+import org.rjs.aem.groovy.console.configuration.ConfigurationService
 import com.icfolson.aem.prosper.specs.ProsperSpec
 import org.apache.sling.event.jobs.JobManager
 import org.apache.sling.jcr.resource.JcrResourceConstants
-import org.cid15.aem.groovy.console.audit.AuditService
-import org.cid15.aem.groovy.console.constants.GroovyConsoleConstants
-import org.cid15.aem.groovy.console.extension.impl.DefaultBindingExtensionProvider
-import org.cid15.aem.groovy.console.extension.impl.DefaultExtensionService
-import org.cid15.aem.groovy.console.extension.impl.DefaultScriptMetaClassExtensionProvider
+import org.rjs.aem.groovy.console.audit.AuditService
+import org.rjs.aem.groovy.console.constants.GroovyConsoleConstants
+import org.rjs.aem.groovy.console.extension.impl.DefaultBindingExtensionProvider
+import org.rjs.aem.groovy.console.extension.impl.DefaultExtensionService
+import org.rjs.aem.groovy.console.extension.impl.DefaultScriptMetaClassExtensionProvider
 
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.PATH_SCRIPTS_FOLDER
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.PATH_SCRIPTS_FOLDER
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
 
 class DefaultGroovyConsoleServiceSpec extends ProsperSpec {
 

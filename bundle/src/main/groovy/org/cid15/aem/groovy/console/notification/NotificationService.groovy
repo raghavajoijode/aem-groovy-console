@@ -1,6 +1,6 @@
-package org.cid15.aem.groovy.console.notification
+package org.rjs.aem.groovy.console.notification
 
-import org.cid15.aem.groovy.console.response.RunScriptResponse
+import org.rjs.aem.groovy.console.response.RunScriptResponse
 
 /**
  * Services may implement this interface to provide additional notifications for Groovy Console script executions.

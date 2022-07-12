@@ -1,10 +1,10 @@
-package org.cid15.aem.groovy.console.job.event.impl
+package org.rjs.aem.groovy.console.job.event.impl
 
-import org.cid15.aem.groovy.console.audit.AuditService
-import org.cid15.aem.groovy.console.notification.EmailNotificationService
+import org.rjs.aem.groovy.console.audit.AuditService
+import org.rjs.aem.groovy.console.notification.EmailNotificationService
 import groovy.util.logging.Slf4j
-import org.cid15.aem.groovy.console.job.event.AbstractGroovyConsoleScheduledJobEventHandler
-import org.cid15.aem.groovy.console.response.RunScriptResponse
+import org.rjs.aem.groovy.console.job.event.AbstractGroovyConsoleScheduledJobEventHandler
+import org.rjs.aem.groovy.console.response.RunScriptResponse
 import org.osgi.service.component.annotations.Component
 import org.osgi.service.component.annotations.Reference
 import org.osgi.service.event.EventHandler

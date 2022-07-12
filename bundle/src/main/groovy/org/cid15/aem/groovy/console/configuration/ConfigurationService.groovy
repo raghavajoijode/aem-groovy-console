@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.configuration
+package org.rjs.aem.groovy.console.configuration
 
 import org.apache.sling.api.SlingHttpServletRequest
 

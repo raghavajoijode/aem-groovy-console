@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.extension.services
+package org.rjs.aem.groovy.console.extension.services
 
 /**
  * The extension service is responsible for aggregrating all metaclass extension providers and handling the

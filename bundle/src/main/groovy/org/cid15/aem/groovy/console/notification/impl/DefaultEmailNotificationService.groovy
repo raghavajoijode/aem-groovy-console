@@ -1,17 +1,17 @@
-package org.cid15.aem.groovy.console.notification.impl
+package org.rjs.aem.groovy.console.notification.impl
 
 import com.day.cq.mailer.MailService
 import com.google.common.base.Charsets
 import com.google.common.net.MediaType
-import org.cid15.aem.groovy.console.notification.EmailNotificationService
-import org.cid15.aem.groovy.console.notification.NotificationService
+import org.rjs.aem.groovy.console.notification.EmailNotificationService
+import org.rjs.aem.groovy.console.notification.NotificationService
 import groovy.text.GStringTemplateEngine
 import groovy.util.logging.Slf4j
 import org.apache.commons.mail.Email
 import org.apache.commons.mail.HtmlEmail
 import org.apache.commons.mail.MultiPartEmail
-import org.cid15.aem.groovy.console.configuration.ConfigurationService
-import org.cid15.aem.groovy.console.response.RunScriptResponse
+import org.rjs.aem.groovy.console.configuration.ConfigurationService
+import org.rjs.aem.groovy.console.response.RunScriptResponse
 import org.osgi.service.component.annotations.Component
 import org.osgi.service.component.annotations.Reference
 import org.osgi.service.component.annotations.ReferenceCardinality

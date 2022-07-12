@@ -1,10 +1,10 @@
-package org.cid15.aem.groovy.console.servlets
+package org.rjs.aem.groovy.console.servlets
 
-import org.cid15.aem.groovy.console.audit.AuditRecord
-import org.cid15.aem.groovy.console.audit.AuditService
-import org.cid15.aem.groovy.console.configuration.ConfigurationService
-import org.cid15.aem.groovy.console.constants.GroovyConsoleConstants
-import org.cid15.aem.groovy.console.utils.GroovyScriptUtils
+import org.rjs.aem.groovy.console.audit.AuditRecord
+import org.rjs.aem.groovy.console.audit.AuditService
+import org.rjs.aem.groovy.console.configuration.ConfigurationService
+import org.rjs.aem.groovy.console.constants.GroovyConsoleConstants
+import org.rjs.aem.groovy.console.utils.GroovyScriptUtils
 import org.apache.sling.api.SlingHttpServletRequest
 import org.apache.sling.api.SlingHttpServletResponse
 import org.osgi.service.component.annotations.Component
@@ -13,7 +13,7 @@ import org.osgi.service.component.annotations.Reference
 import javax.servlet.Servlet
 import java.text.SimpleDateFormat
 
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.DATE_FORMAT_DISPLAY
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.DATE_FORMAT_DISPLAY
 
 @Component(service = Servlet, immediate = true, property = [
     "sling.servlet.paths=/bin/groovyconsole/audit"

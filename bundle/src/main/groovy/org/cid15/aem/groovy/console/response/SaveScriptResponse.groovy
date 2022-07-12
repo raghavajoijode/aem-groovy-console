@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.response
+package org.rjs.aem.groovy.console.response
 
 /**
  * Response for saved scripts.

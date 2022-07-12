@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.utils
+package org.rjs.aem.groovy.console.utils
 
 final class GroovyScriptUtils {
 

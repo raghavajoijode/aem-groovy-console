@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.configuration.impl
+package org.rjs.aem.groovy.console.configuration.impl
 
 import groovy.transform.Synchronized
 import groovy.util.logging.Slf4j
@@ -6,7 +6,7 @@ import org.apache.jackrabbit.api.security.user.User
 import org.apache.jackrabbit.api.security.user.UserManager
 import org.apache.sling.api.SlingHttpServletRequest
 import org.apache.sling.api.resource.ResourceResolverFactory
-import org.cid15.aem.groovy.console.configuration.ConfigurationService
+import org.rjs.aem.groovy.console.configuration.ConfigurationService
 import org.osgi.service.component.annotations.Activate
 import org.osgi.service.component.annotations.Component
 import org.osgi.service.component.annotations.Modified

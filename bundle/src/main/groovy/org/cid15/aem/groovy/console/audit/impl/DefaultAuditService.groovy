@@ -1,16 +1,16 @@
-package org.cid15.aem.groovy.console.audit.impl
+package org.rjs.aem.groovy.console.audit.impl
 
 import com.day.cq.commons.jcr.JcrUtil
-import org.cid15.aem.groovy.console.audit.AuditService
-import org.cid15.aem.groovy.console.configuration.ConfigurationService
+import org.rjs.aem.groovy.console.audit.AuditService
+import org.rjs.aem.groovy.console.configuration.ConfigurationService
 import groovy.transform.Synchronized
 import groovy.util.logging.Slf4j
 import org.apache.sling.api.resource.PersistenceException
 import org.apache.sling.api.resource.ResourceResolver
 import org.apache.sling.api.resource.ResourceResolverFactory
-import org.cid15.aem.groovy.console.audit.AuditRecord
-import org.cid15.aem.groovy.console.constants.GroovyConsoleConstants
-import org.cid15.aem.groovy.console.response.RunScriptResponse
+import org.rjs.aem.groovy.console.audit.AuditRecord
+import org.rjs.aem.groovy.console.constants.GroovyConsoleConstants
+import org.rjs.aem.groovy.console.response.RunScriptResponse
 import org.osgi.service.component.annotations.Activate
 import org.osgi.service.component.annotations.Component
 import org.osgi.service.component.annotations.Reference
@@ -21,19 +21,19 @@ import javax.jcr.Session
 
 import static com.day.cq.commons.jcr.JcrConstants.MIX_CREATED
 import static com.day.cq.commons.jcr.JcrConstants.NT_UNSTRUCTURED
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.AUDIT_JOB_PROPERTIES
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.AUDIT_NODE_NAME
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.AUDIT_PATH
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.AUDIT_RECORD_NODE_PREFIX
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.DATA
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.EXCEPTION_STACK_TRACE
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.JOB_ID
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.OUTPUT
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.PATH_CONSOLE_ROOT
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.RESULT
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.RUNNING_TIME
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.TIME_ZONE_RUNNING_TIME
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.AUDIT_JOB_PROPERTIES
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.AUDIT_NODE_NAME
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.AUDIT_PATH
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.AUDIT_RECORD_NODE_PREFIX
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.DATA
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.EXCEPTION_STACK_TRACE
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.JOB_ID
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.OUTPUT
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.PATH_CONSOLE_ROOT
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.RESULT
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.RUNNING_TIME
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.TIME_ZONE_RUNNING_TIME
 
 @Component(service = AuditService, immediate = true)
 @Slf4j("LOG")

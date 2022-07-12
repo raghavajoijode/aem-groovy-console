@@ -1,9 +1,9 @@
-package org.cid15.aem.groovy.console.extension
+package org.rjs.aem.groovy.console.extension
 
-import org.cid15.aem.groovy.console.api.BindingExtensionProvider
-import org.cid15.aem.groovy.console.api.CompilationCustomizerExtensionProvider
-import org.cid15.aem.groovy.console.api.context.ScriptContext
-import org.cid15.aem.groovy.console.api.StarImportExtensionProvider
+import org.rjs.aem.groovy.console.api.BindingExtensionProvider
+import org.rjs.aem.groovy.console.api.CompilationCustomizerExtensionProvider
+import org.rjs.aem.groovy.console.api.context.ScriptContext
+import org.rjs.aem.groovy.console.api.StarImportExtensionProvider
 
 /**
  * Service that dynamically binds extensions providing additional script bindings, star imports, and script metaclasses.

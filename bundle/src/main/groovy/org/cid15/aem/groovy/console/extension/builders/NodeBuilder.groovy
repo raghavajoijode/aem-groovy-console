@@ -1,4 +1,4 @@
-package org.cid15.aem.groovy.console.extension.builders
+package org.rjs.aem.groovy.console.extension.builders
 
 import javax.jcr.Node
 import javax.jcr.Session

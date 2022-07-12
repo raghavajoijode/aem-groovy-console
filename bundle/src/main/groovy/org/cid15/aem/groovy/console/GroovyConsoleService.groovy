@@ -1,11 +1,11 @@
-package org.cid15.aem.groovy.console
+package org.rjs.aem.groovy.console
 
-import org.cid15.aem.groovy.console.api.ActiveJob
-import org.cid15.aem.groovy.console.api.JobProperties
-import org.cid15.aem.groovy.console.api.context.ScriptContext
-import org.cid15.aem.groovy.console.api.context.ScriptData
-import org.cid15.aem.groovy.console.response.RunScriptResponse
-import org.cid15.aem.groovy.console.response.SaveScriptResponse
+import org.rjs.aem.groovy.console.api.ActiveJob
+import org.rjs.aem.groovy.console.api.JobProperties
+import org.rjs.aem.groovy.console.api.context.ScriptContext
+import org.rjs.aem.groovy.console.api.context.ScriptData
+import org.rjs.aem.groovy.console.response.RunScriptResponse
+import org.rjs.aem.groovy.console.response.SaveScriptResponse
 
 /**
  * Service for executing and saving Groovy scripts.

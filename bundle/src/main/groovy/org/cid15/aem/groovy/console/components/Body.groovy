@@ -1,9 +1,9 @@
-package org.cid15.aem.groovy.console.components
+package org.rjs.aem.groovy.console.components
 
-import org.cid15.aem.groovy.console.GroovyConsoleService
-import org.cid15.aem.groovy.console.audit.AuditRecord
-import org.cid15.aem.groovy.console.audit.AuditService
-import org.cid15.aem.groovy.console.configuration.ConfigurationService
+import org.rjs.aem.groovy.console.GroovyConsoleService
+import org.rjs.aem.groovy.console.audit.AuditRecord
+import org.rjs.aem.groovy.console.audit.AuditService
+import org.rjs.aem.groovy.console.configuration.ConfigurationService
 import groovy.json.JsonBuilder
 import org.apache.sling.api.SlingHttpServletRequest
 import org.apache.sling.models.annotations.Model
@@ -12,8 +12,8 @@ import org.apache.sling.models.annotations.injectorspecific.Self
 
 import javax.annotation.PostConstruct
 
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
-import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.USER_ID
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
+import static org.rjs.aem.groovy.console.constants.GroovyConsoleConstants.USER_ID
 
 @Model(adaptables = SlingHttpServletRequest)
 class Body {
