@@ -6,13 +6,13 @@ import org.cid15.aem.groovy.console.api.BindingExtensionProvider
 import org.cid15.aem.groovy.console.api.BindingVariable
 import org.cid15.aem.groovy.console.api.context.ScriptContext
 import org.cid15.aem.groovy.console.api.context.ServletScriptContext
-import com.icfolson.aem.groovy.extension.builders.NodeBuilder
-import com.icfolson.aem.groovy.extension.builders.PageBuilder
 import groovy.json.JsonException
 import groovy.json.JsonSlurper
 import org.apache.sling.api.SlingHttpServletRequest
 import org.apache.sling.api.SlingHttpServletResponse
 import org.apache.sling.api.resource.ResourceResolver
+import org.cid15.aem.groovy.console.extension.builders.PageBuilder
+import org.cid15.aem.groovy.console.extension.builders.NodeBuilder
 import org.osgi.framework.BundleContext
 import org.osgi.service.component.annotations.Activate
 import org.osgi.service.component.annotations.Component

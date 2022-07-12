@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.cid15.aem.groovy.console</groupId>
         <artifactId>aem-groovy-console</artifactId>
-        <version>17.0.0</version>
+        <version>17.1.30</version>
     </parent>
 
     <artifactId>aem-groovy-console-all</artifactId>
@@ -28,16 +28,6 @@
                     <!-- skip sub package validation for now as some vendor packages like CIF apps will not pass -->
                     <skipSubPackageValidation>true</skipSubPackageValidation>
                     <embeddeds>
-                        <embedded>
-                            <groupId>org.codehaus.groovy</groupId>
-                            <artifactId>groovy-all</artifactId>
-                            <target>/apps/aem-groovy-console-packages/content/install</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.icfolson.aem.groovy.extension</groupId>
-                            <artifactId>aem-groovy-extension-bundle</artifactId>
-                            <target>/apps/aem-groovy-console-packages/content/install</target>
-                        </embedded>
                         <embedded>
                             <groupId>org.cid15.aem.groovy.console</groupId>
                             <artifactId>aem-groovy-console-bundle</artifactId>
@@ -178,14 +168,6 @@
     </profiles>
 
     <dependencies>
-        <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy-all</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.icfolson.aem.groovy.extension</groupId>
-            <artifactId>aem-groovy-extension-bundle</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.cid15.aem.groovy.console</groupId>
             <artifactId>aem-groovy-console-bundle</artifactId>

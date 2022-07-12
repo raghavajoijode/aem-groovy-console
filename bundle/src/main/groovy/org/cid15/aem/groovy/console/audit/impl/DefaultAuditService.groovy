@@ -33,6 +33,7 @@ import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.PATH
 import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.RESULT
 import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.RUNNING_TIME
 import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.SCRIPT
+import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.TIME_ZONE_RUNNING_TIME
 
 @Component(service = AuditService, immediate = true)
 @Slf4j("LOG")
@@ -179,10 +180,10 @@ class DefaultAuditService implements AuditService {
 
     @Synchronized
     private Node addAuditRecordNode(ResourceResolver resourceResolver, String userId) {
-        def date = Calendar.instance
-        def year = date.format(DATE_FORMAT_YEAR)
-        def month = date.format(DATE_FORMAT_MONTH)
-        def day = date.format(DATE_FORMAT_DAY)
+        def date = Calendar.getInstance(TimeZone.getTimeZone(TIME_ZONE_RUNNING_TIME))
+        def year = date.get(Calendar.YEAR)
+        def month = date.get(Calendar.MONTH)
+        def day = date.get(Calendar.DAY_OF_MONTH)
 
         def adminSession = resourceResolver.adaptTo(Session)
 

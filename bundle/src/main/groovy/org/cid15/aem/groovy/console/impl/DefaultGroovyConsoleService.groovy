@@ -33,6 +33,7 @@ import org.osgi.service.component.annotations.ReferencePolicy
 
 import javax.jcr.Node
 import javax.jcr.Session
+import java.text.SimpleDateFormat
 import java.util.concurrent.CopyOnWriteArrayList
 
 import static org.cid15.aem.groovy.console.constants.GroovyConsoleConstants.CHARSET
@@ -52,7 +53,9 @@ class DefaultGroovyConsoleService implements GroovyConsoleService {
         def date = new Date()
 
         date.time = System.currentTimeMillis() - start
-        date.format(FORMAT_RUNNING_TIME, TimeZone.getTimeZone(TIME_ZONE_RUNNING_TIME))
+        SimpleDateFormat sdf = new SimpleDateFormat(FORMAT_RUNNING_TIME)
+        sdf.setTimeZone(TimeZone.getTimeZone(TIME_ZONE_RUNNING_TIME));
+        sdf.format(date)
     }
 
     @Reference
